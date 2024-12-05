@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>註冊</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>使用者註冊</h1>
+        <form action="/register" method="POST">
+            <label for="name">姓名:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="student_id">學號:</label>
+            <input type="text" id="student_id" name="student_id" required><br><br>
+
+            <label for="password">密碼:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button type="submit">註冊</button>
+        </form>
+
+        <p>已經有帳號了嗎？<a href="/login">返回登入</a></p>
+    </div>
+</body>
+</html>
